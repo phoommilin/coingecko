@@ -1,0 +1,137 @@
+.coin-list {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    height: 45px;
+    color: #212529;
+    // border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 500;
+    font-size: 0.875rem;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration-color: #333;
+            text-decoration: underline;
+        }
+    }
+    .coin-list__rank {
+        margin-right: 2rem;
+        margin-left: 1.5rem;
+        width: 59.3125px;
+
+        @media (max-width: 500px) {
+            max-width: 40px;
+        }
+    }
+
+    .coin-list__coin-title {
+        width: 359.954px;
+        font-weight: 700;
+        display: flex;
+        color: #333;
+
+        @media (max-width: 500px) {
+            max-width: 120px;
+        }
+
+        .coin-name {
+            width: 155px;
+            font-weight: 700;
+        }
+
+        .coin-symbol {
+            font-weight: 300;
+            font-size: 0.75rem;
+            margin-top: 3px;
+            
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+    }
+
+    .coin-list__price {
+        width: 164.344px;
+        text-align: right;
+        
+        @media (max-width: 500px) {
+            max-width: 110px;
+        }
+    }
+
+    .coin-list__price-change {
+        width: 70px;
+        text-align: right;
+
+        .red {
+            color: #e15241;
+
+        }
+
+        .green {
+            color: #4eaf0a;
+        }
+    }
+
+    .coin-list__volume-change-24h {
+        width: 155px;
+        text-align: right;
+    }
+
+    .coin-list__market-cap {
+        width: 155px;
+        text-align: right;
+    }
+
+    .coin-list__image {
+        width: 19px;
+        height: 19px;
+        margin-right: 1rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.paginationBttns {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+
+    @media (max-width: 500px) {
+        padding-left: 0rem;
+    }
+
+    li {
+        list-style: none;
+        border-top: solid 1px #dee2e6;
+        border-bottom: solid 1px #dee2e6;
+        border-right: solid 0.5px #dee2e6;
+        border-left: solid 0.5px #dee2e6;
+        color: #4a4a4a;
+
+        &.previous {
+            border-left: solid 1px #dee2e6;
+            border-radius: 0.25rem 0 0 0.25rem;
+        }
+
+        &.next {
+            border-right: solid 1px #dee2e6;
+            border-radius: 0 0.25rem 0.25rem 0;
+        }
+
+        a {
+            padding: 4px 10px;
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+    }
+
+    
+}
